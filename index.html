@@ -3,76 +3,79 @@
   <head>
     <title>Dmitry Reztsov Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
     <meta charset="utf-8">
-    <meta name="Dmitry Reztsov" content="Страница для обучения написания html и css">
-    <meta name="description" content="Страница для обучения написания html и css" >
-    <link rel="shortcut icon" href="images/icon.ico" type="image/x-icon">
+    <meta name="Dmitry Reztsov" content="Resume">
+    <meta name="description" content="Personal WebSite for resume">
+    <link rel="shortcut icon" href="images/icon.png" type="image/png">
   </head>
   <body>
     <header>
-      <h1>Dmitry Reztsov  Website</h1>
-    </header>
-      <!-- Navigation Menu -->
-      <nav>
-        <ul>
-          <li><a href="#About me">About me</a></li>
-          <li><a href="#Study">Study</a></li>
-          <li><a href="#Work">My Work</a></li>
-          <li><a href="#Hobby">Hobby</a></li>
-            <ol>
-              <li>Investing</li>
-              <li>Games</li>
-            </ol>
-        </ul>
-      </nav> 
-    <time datetime="2021-06-22">22 июня 2021</time>
-    <main>
       <figure>
         <img src="images/myphoto.jpg" alt="Dmitry Reztsov Photo" title="My photo">
-        <figcaption>Dmitry Reztsov in a gym</figcaption>
-      </figure>
-      <p>There are some information about my life.</p>
-      <blockquote cite="https://en.wikipedia.org/wiki/Julius_Caesar">
-        <p>Veni,Vidi,Vici</p>
-      <hr>
-      </blockquote>
-      <h2 id="About me">About me</h2>
-      <p>I was born in 1994 year, November 27<sup>th</sup>.<br>
-        Krasnodar is my home and I am living here<br>
-        <div style="position:relative;overflow:hidden;">
-          <a href="https://yandex.ru/maps/35/krasnodar/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Краснодар</a>
-          <a href="https://yandex.ru/maps/35/krasnodar/?feedback=map%2Fedit&ll=38.995274%2C45.028508&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты</a>
-          <iframe src="https://yandex.ru/map-widget/v1/-/CCUe4-Q83C" width="560" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-        </div>      
-      </p>
-      <h2 id="Study">Study</h2>
-      <p>I am studied in middle-grade school №49 for eleven years, after that I ended BMSTU in 2012 year</p>
-      <h2 id="Work">Work</h2>
-      <p>I am working for 3 years as a sales manager, and I am planning to become a Web Developer</p>
-      <h2 id="Hobby">Hobby</h2>
-      <p>I have 2 main hobbies, but i always seek a new inspiration</p>
-      <h3>Investing</h3>
-      <p>In 2020 i became an investor, and i have small pack of shares of american and chinese corporation such as Baidu, JD.com and Intel. I love biotech and It companies</p>
-      <p>This is a my <a href="https://www.tinkoff.ru/invest/social/profile/Moar/">invest profile</a></p>
-      <h3>Games</h3>
-      <p>Resting, i play in other games, this can be shooter, strategy and etc. My yop games:</p>
-      <dl>
-        <dt><strong>Apex Legends</strong></dt>
-        <dd>FPS in future<br>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/xmadDR_Wh_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </dd>
-        <dt><strong>DND</strong></dt>
-        <dd>Rpg with friends,which hasn't restriction</dd>
-        <dt><strong><abbr title="Defence of the Ancients">Dota</abbr></strong></dt>
-        <dd>It speaks for itself</dd>
-      </dl>
-      <p>You can contact me in <a href="mailto:rez_dima@mail.ru">email</a></p>
+      </figure> 
+      <article>
+        <h1>Dmitry Reztsov</h1>
+        <p>Frontend Developer</p>
+        <p>+7 (953) 091-05-23</p>  
+        <p><a href="mailto:rez_dima@mail.ru?subject=Interview%20invitation">rez_dima@mail.ru</a></p>
+      </article>
+    </header>
+    <main>
+      <section>
+        <article class="skill-list">
+          <h2>Bio</h2>
+          <p>I was born in 1994 year, November 27<sup>th</sup>.
+            Krasnodar is my home and I am living here</p>
+          <p>I am studied in middle-grade school №49 for eleven years, after that I ended <a href="https://bmstu.ru/" alt="Ссылка на домашнюю страницу БМСТУ" title="Сайт БМСТУ" target="_blank"
+            >BMSTU</a> in 2012 year. My specialization was "Innovation".</p>
+          <p>I have a lot of experience in information technology, any physics and math, but i think to become marketer in those times.</p>
+        </article>
+        <article class="skill-list">
+          <h2>Work experience</h2>
+          <p>My first job as a Sales Manager in small company.</p>
+          <p>Next and current job is sales in logistic company named as CDEK. I worked in Cdek about 3 years and got promoted to Client Development Manager</p>
+        </article>
+        <article class="skill-list">
+          <h2>Work objective</h2>
+          <p>I am planning to become a Web Developer, because have some practice and ambitions. When I am practicing, i have a lot of fun and enthusiasm.</p>
+        </article>
+      </section>
+      <section>
+        <article class="skill-list">
+          <h2>Main skills</h2>
+          <ul>
+            <li>HTML, CSS</li>
+            <li>JS</li>
+            <li>Git</li>
+            <li>Basic Computer Science</li>
+            <li><s>Frameworks</s></li>
+          </ul>
+        </article>
+        <article class="skill-list">
+          <h2>Other skills</h2>
+          <ul>
+            <li><b>English</b>, Intermediate lvl</li>
+            <li>Hardware knowledge</li>
+            <li>Basic knowleghe of Scrum methodology</li>
+            <li>Fast-printing</li>
+          </ul>
+        </article>
+        <article class="skill-list">
+          <h2>Soft skills</h2>
+          <ul>
+            <li>Communicative</li>
+            <li>Stress-resistant</li>
+            <li>Love teamwork</li>
+            <li>Idea generator</li>
+          </ul>
+        </article>
+      </section>
     </main>
     <footer>
-      <address>
-        <p>Page creator — <a href="https://vk.com/moardisorder">Dmitry Reztsov</a>.</p>
-      </address>
+      <p>If you want to meet, contact me any way</p>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
