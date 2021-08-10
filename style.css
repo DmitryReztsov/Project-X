@@ -7,18 +7,21 @@ html {
     box-sizing: inherit;
   }
 header {
-    display:flex;
-    align-items: center;
-    justify-content: center;
+    display:grid;
     background-color: rgb(231, 228, 223);
     border-radius: 20px;
-    width: 740px;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    
+}
+
+header > div {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto; 
 }
 img {
-    width: 200px;
-    height: 200px;
+    width: 20em;
+    height: 20em;
     border: 3px solid rgb(206, 202, 202);
     border-radius: 10em;
 }
@@ -36,23 +39,15 @@ a:hover {
 }
 
 main {
-    display:flex;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-main section {
-    display: flex;
-    flex-flow: column wrap;
-}
-
-main section {
-    max-width: 380px;
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-gap: 20px;
+    grid-auto-rows: minmax(100px, auto);
 }
 
 article {
-    margin: 10px;
     padding: 20px;
+    margin-top: 10px;
 }
 
 .skill-list {
