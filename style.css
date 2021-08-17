@@ -1,6 +1,5 @@
 html {
-    background-color: #8BC6EC;
-    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    background-color: #317484;
     box-sizing: border-box;
 }
 *, *::before, *::after {
@@ -8,10 +7,11 @@ html {
   }
 header {
     display:grid;
-    background-color: rgb(231, 228, 223);
+    background-color: #e3ebdc;
     border-radius: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    
+    grid-template-columns: 1 fr;
+    margin: 20px 20px;
+    padding-top: 20px;
 }
 
 header > div {
@@ -19,7 +19,7 @@ header > div {
     margin-top: auto;
     margin-bottom: auto; 
 }
-img {
+header img {
     width: 20em;
     height: 20em;
     border: 3px solid rgb(206, 202, 202);
@@ -40,17 +40,39 @@ a:hover {
 
 main {
     display:grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-    grid-gap: 20px;
+    grid-template-columns: 1 fr;
+    grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
+    margin:0px 10px;
 }
 
 article {
     padding: 20px;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .skill-list {
-    background-color: rgb(231, 228, 223);
+    background-color: #e3ebdc;
     border-radius: 20px;
+}
+
+footer {
+    text-align: center;
+}
+
+.social {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    padding-left: 0px;
+}
+.social li {
+    list-style-type: none;
+    margin: 0px 10px;
+}
+
+.social img {
+    width: 40px;
+    height: 40px;
 }
